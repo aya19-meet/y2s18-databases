@@ -14,11 +14,9 @@ class Knowledge(Base):
 
 	def __repr__(self):
 		return ("If you want to learn about {},you should look at the wikipedia article called {}\n"
-			"we gave this article a rating of {} our of 10\n"
-			"ID: {}").format(
+			"we gave this article a rating of {} our of 10\n").format(
 						self.topic,
 						self.article,
-						self.rating,
-						self.some_id)
+						self.rating)
 
 	
